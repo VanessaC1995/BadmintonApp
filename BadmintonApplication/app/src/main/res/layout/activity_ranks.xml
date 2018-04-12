@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vanessa.badmintonapplication.Ranks">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Rankings"
+            android:textColor="#000080"
+            android:textSize="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imgRanks"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_below="@+id/tbAddName"
+            android:layout_alignStart="@+id/tbAddName" />
+
+        <EditText
+            android:id="@+id/tbAddName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Name of Image"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Add Image"
+            android:layout_below="@+id/btnChoose"
+            android:layout_alignEnd="@+id/btnChoose"
+            android:layout_alignStart="@+id/btnChoose" />
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Image"
+            android:layout_below="@+id/imgRanks"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
